@@ -1,0 +1,66 @@
+Exactly. The next step should be to turn that architecture into the actual prototype.
+
+I’d make Hypersphere.dm the declarative layer and implement the pipeline as:
+
+Hypersphere.dm
+      ↓
+   Parser
+      ↓
+Dimensional Model / IR
+      ↓
+4D Transform Engine
+      ↓
+ ┌────┴────┐
+ ↓         ↓
+Slicer   Projector
+ ↓         ↓
+ └────┬────┘
+      ↓
+3D Renderer
+      ↓
+Web / Python / SystemVerilog
+
+The key design decision is that slice and projection should be separate operations.
+
+Core model
+
+DimensionalObject
+ ├── dimension = 4
+ ├── geometry
+ │    ├── center
+ │    ├── radius
+ │    └── topology
+ ├── transform
+ │    └── rotations
+ ├── slice
+ │    ├── axis
+ │    └── position
+ └── projection
+      ├── target_dimension
+      └── method
+
+Then the engine can support:
+
+4D hypersphere
+       │
+       ├── XW rotation
+       ├── YW rotation
+       ├── ZW rotation
+       └── XY/XZ/YZ rotations
+              │
+              ▼
+       transformed 4D object
+              │
+       ┌──────┴──────┐
+       ▼             ▼
+   4D slice       4D projection
+       │             │
+       ▼             ▼
+      3D             3D
+       └──────┬──────┘
+              ▼
+           renderer
+
+And this gives us a clean path toward the SpaceCapture concept you were developing earlier: the same dimensional engine can represent an object in a higher-dimensional state, transform it, take a dimensional slice, and finally render the resulting observable geometry.
+
+I would build the repository around a general DimensionalModel core, with Hypersphere as the first geometry implementation—not the other way around. That makes the project extensible to tesseracts, 4D meshes, fields, trajectories, and eventually your SpaceCapture model.
