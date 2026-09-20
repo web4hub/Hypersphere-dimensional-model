@@ -1,0 +1,51 @@
+\Prototype architecture
+
+Hypersphere.dm
+      │
+      ▼
+  DM Parser
+      │
+      ▼
+   DM AST
+      │
+      ▼
+Dimension Engine
+      │
+      ├── Geometry
+      ├── Topology
+      ├── Fields
+      └── Transformations
+      │
+      ▼
+Observation Engine
+      │
+      ▼
+Projection Engine
+      │
+      ▼
+3D Renderer
+
+The first executable object will support:
+
+* 4D hypersphere definition
+* arbitrary radius
+* w-axis slicing
+* 4D → 3D projection
+* movement through the w dimension
+* 4D rotation in the x-w plane
+* interactive visualization
+* .dm file loading
+
+The canonical mathematical object is:
+
+x^2+y^2+z^2+w^2=R^2
+
+with a 3D slice:
+
+x^2+y^2+z^2=R^2-w^2
+
+and therefore:
+
+r(w)=\sqrt{R^2-w^2}.
+
+I can build this as an actual ￼ downloadable prototype project next, including Hypersphere.dm, the parser, renderer, and a README explaining the .dm syntax.
