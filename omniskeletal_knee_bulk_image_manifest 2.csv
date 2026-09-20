@@ -1,0 +1,101 @@
+image_id,image_path,modality,body_region,laterality,structure,finding,finding_description,label,bbox_x,bbox_y,bbox_width,bbox_height,confidence,source,clinical_use
+omni_knee_0001,images/knee/omni_knee_0001.png,MRI,knee,Left,Meniscus,Joint effusion,Increased joint fluid,1,205,194,75,66,0.896,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0002,images/knee/omni_knee_0002.png,MRI,knee,Right,ACL,Cartilage defect,Focal cartilage abnormality,1,95,127,95,99,0.847,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0003,images/knee/omni_knee_0003.png,X-ray,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0004,images/knee/omni_knee_0004.png,Ultrasound,knee,Right,ACL,Osteoarthritis,Degenerative joint changes,1,161,296,127,111,0.745,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0005,images/knee/omni_knee_0005.png,CT,knee,Left,PCL,Bone marrow edema,Marrow signal abnormality,1,274,129,131,128,0.875,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0006,images/knee/omni_knee_0006.png,MRI,knee,Right,Tibia,Bone marrow edema,Marrow signal abnormality,1,143,273,60,115,0.941,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0007,images/knee/omni_knee_0007.png,CT,knee,Left,PCL,Cartilage defect,Focal cartilage abnormality,1,103,418,98,114,0.986,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0008,images/knee/omni_knee_0008.png,X-ray,knee,Left,Patella,Bone marrow edema,Marrow signal abnormality,1,222,312,133,81,0.807,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0009,images/knee/omni_knee_0009.png,CT,knee,Left,Joint Space,Osteoarthritis,Degenerative joint changes,1,405,167,176,102,0.747,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0010,images/knee/omni_knee_0010.png,CT,knee,Left,Cartilage,ACL injury,Abnormal ACL appearance,1,108,197,48,120,0.816,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0011,images/knee/omni_knee_0011.png,X-ray,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0012,images/knee/omni_knee_0012.png,Ultrasound,knee,Right,Femur,Osteoarthritis,Degenerative joint changes,1,153,215,75,103,0.916,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0013,images/knee/omni_knee_0013.png,CT,knee,Right,Joint Space,Cartilage defect,Focal cartilage abnormality,1,284,265,96,75,0.848,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0014,images/knee/omni_knee_0014.png,MRI,knee,Left,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0015,images/knee/omni_knee_0015.png,X-ray,knee,Right,Joint Space,Osteoarthritis,Degenerative joint changes,1,112,277,137,159,0.853,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0016,images/knee/omni_knee_0016.png,MRI,knee,Left,Tibia,Cartilage defect,Focal cartilage abnormality,1,216,408,127,68,0.785,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0017,images/knee/omni_knee_0017.png,Ultrasound,knee,Left,Meniscus,Osteoarthritis,Degenerative joint changes,1,336,171,169,67,0.952,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0018,images/knee/omni_knee_0018.png,X-ray,knee,Left,Cartilage,Meniscal tear,Suspected meniscal tear,1,162,356,175,40,0.874,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0019,images/knee/omni_knee_0019.png,MRI,knee,Left,Cartilage,ACL injury,Abnormal ACL appearance,1,237,202,54,101,0.955,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0020,images/knee/omni_knee_0020.png,MRI,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0021,images/knee/omni_knee_0021.png,MRI,knee,Left,MCL,Bone marrow edema,Marrow signal abnormality,1,417,323,180,82,0.777,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0022,images/knee/omni_knee_0022.png,Ultrasound,knee,Left,Tibia,Bone marrow edema,Marrow signal abnormality,1,182,239,142,135,0.827,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0023,images/knee/omni_knee_0023.png,Ultrasound,knee,Left,LCL,Cartilage defect,Focal cartilage abnormality,1,195,112,126,45,0.871,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0024,images/knee/omni_knee_0024.png,X-ray,knee,Left,PCL,Osteoarthritis,Degenerative joint changes,1,403,110,98,57,0.963,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0025,images/knee/omni_knee_0025.png,CT,knee,Left,Tibia,Bone marrow edema,Marrow signal abnormality,1,201,222,164,94,0.856,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0026,images/knee/omni_knee_0026.png,Ultrasound,knee,Left,Femur,Joint effusion,Increased joint fluid,1,288,177,64,64,0.891,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0027,images/knee/omni_knee_0027.png,Ultrasound,knee,Right,Femur,Meniscal tear,Suspected meniscal tear,1,107,414,65,55,0.817,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0028,images/knee/omni_knee_0028.png,MRI,knee,Left,LCL,Meniscal tear,Suspected meniscal tear,1,177,354,154,75,0.822,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0029,images/knee/omni_knee_0029.png,Ultrasound,knee,Left,PCL,Meniscal tear,Suspected meniscal tear,1,306,361,65,52,0.889,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0030,images/knee/omni_knee_0030.png,MRI,knee,Left,LCL,Cartilage defect,Focal cartilage abnormality,1,165,288,164,163,0.762,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0031,images/knee/omni_knee_0031.png,MRI,knee,Left,Patella,ACL injury,Abnormal ACL appearance,1,81,279,107,156,0.783,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0032,images/knee/omni_knee_0032.png,Ultrasound,knee,Left,LCL,Joint effusion,Increased joint fluid,1,231,191,54,178,0.718,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0033,images/knee/omni_knee_0033.png,MRI,knee,Left,Joint Space,Meniscal tear,Suspected meniscal tear,1,324,337,175,80,0.716,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0034,images/knee/omni_knee_0034.png,MRI,knee,Left,PCL,Cartilage defect,Focal cartilage abnormality,1,384,114,100,143,0.735,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0035,images/knee/omni_knee_0035.png,X-ray,knee,Left,Joint Space,Cartilage defect,Focal cartilage abnormality,1,121,294,173,120,0.971,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0036,images/knee/omni_knee_0036.png,CT,knee,Left,Meniscus,Osteoarthritis,Degenerative joint changes,1,282,147,116,157,0.792,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0037,images/knee/omni_knee_0037.png,MRI,knee,Left,Femur,Bone marrow edema,Marrow signal abnormality,1,398,368,65,58,0.856,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0038,images/knee/omni_knee_0038.png,CT,knee,Left,Cartilage,Cartilage defect,Focal cartilage abnormality,1,115,205,134,112,0.746,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0039,images/knee/omni_knee_0039.png,CT,knee,Left,Tibia,Bone marrow edema,Marrow signal abnormality,1,233,419,66,74,0.777,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0040,images/knee/omni_knee_0040.png,X-ray,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0041,images/knee/omni_knee_0041.png,X-ray,knee,Right,LCL,Meniscal tear,Suspected meniscal tear,1,404,215,169,165,0.773,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0042,images/knee/omni_knee_0042.png,MRI,knee,Left,Patella,Bone marrow edema,Marrow signal abnormality,1,221,102,40,125,0.924,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0043,images/knee/omni_knee_0043.png,CT,knee,Left,Femur,Joint effusion,Increased joint fluid,1,362,298,42,68,0.722,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0044,images/knee/omni_knee_0044.png,X-ray,knee,Left,Cartilage,Joint effusion,Increased joint fluid,1,378,362,77,150,0.737,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0045,images/knee/omni_knee_0045.png,CT,knee,Left,Cartilage,Meniscal tear,Suspected meniscal tear,1,187,207,66,130,0.926,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0046,images/knee/omni_knee_0046.png,Ultrasound,knee,Left,LCL,Bone marrow edema,Marrow signal abnormality,1,163,170,145,46,0.752,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0047,images/knee/omni_knee_0047.png,Ultrasound,knee,Left,Meniscus,Meniscal tear,Suspected meniscal tear,1,161,135,137,49,0.949,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0048,images/knee/omni_knee_0048.png,X-ray,knee,Right,Cartilage,Osteoarthritis,Degenerative joint changes,1,236,196,97,46,0.891,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0049,images/knee/omni_knee_0049.png,CT,knee,Right,PCL,ACL injury,Abnormal ACL appearance,1,222,259,170,142,0.897,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0050,images/knee/omni_knee_0050.png,CT,knee,Left,PCL,Bone marrow edema,Marrow signal abnormality,1,213,171,107,49,0.731,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0051,images/knee/omni_knee_0051.png,CT,knee,Right,Patella,ACL injury,Abnormal ACL appearance,1,390,341,69,138,0.961,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0052,images/knee/omni_knee_0052.png,CT,knee,Left,Patella,Osteoarthritis,Degenerative joint changes,1,80,346,177,90,0.806,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0053,images/knee/omni_knee_0053.png,CT,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0054,images/knee/omni_knee_0054.png,MRI,knee,Right,Tibia,Joint effusion,Increased joint fluid,1,238,289,123,143,0.902,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0055,images/knee/omni_knee_0055.png,X-ray,knee,Left,Patella,Cartilage defect,Focal cartilage abnormality,1,420,274,84,117,0.818,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0056,images/knee/omni_knee_0056.png,MRI,knee,Right,Meniscus,Bone marrow edema,Marrow signal abnormality,1,187,300,122,159,0.828,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0057,images/knee/omni_knee_0057.png,X-ray,knee,Right,MCL,Joint effusion,Increased joint fluid,1,417,123,112,171,0.893,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0058,images/knee/omni_knee_0058.png,CT,knee,Left,LCL,Cartilage defect,Focal cartilage abnormality,1,238,195,90,77,0.707,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0059,images/knee/omni_knee_0059.png,Ultrasound,knee,Left,Femur,Osteoarthritis,Degenerative joint changes,1,292,402,89,138,0.843,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0060,images/knee/omni_knee_0060.png,X-ray,knee,Left,PCL,Osteoarthritis,Degenerative joint changes,1,297,192,85,172,0.835,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0061,images/knee/omni_knee_0061.png,X-ray,knee,Left,Femur,Cartilage defect,Focal cartilage abnormality,1,148,317,175,121,0.976,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0062,images/knee/omni_knee_0062.png,Ultrasound,knee,Right,MCL,ACL injury,Abnormal ACL appearance,1,323,310,106,103,0.944,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0063,images/knee/omni_knee_0063.png,Ultrasound,knee,Left,Meniscus,Meniscal tear,Suspected meniscal tear,1,305,119,113,100,0.779,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0064,images/knee/omni_knee_0064.png,MRI,knee,Left,MCL,Meniscal tear,Suspected meniscal tear,1,198,276,79,94,0.719,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0065,images/knee/omni_knee_0065.png,CT,knee,Right,Patella,ACL injury,Abnormal ACL appearance,1,111,185,147,139,0.962,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0066,images/knee/omni_knee_0066.png,MRI,knee,Right,Femur,Cartilage defect,Focal cartilage abnormality,1,83,260,116,139,0.947,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0067,images/knee/omni_knee_0067.png,Ultrasound,knee,Left,Femur,Bone marrow edema,Marrow signal abnormality,1,192,219,151,164,0.708,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0068,images/knee/omni_knee_0068.png,Ultrasound,knee,Left,Femur,Meniscal tear,Suspected meniscal tear,1,145,398,176,46,0.963,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0069,images/knee/omni_knee_0069.png,MRI,knee,Left,Patella,Cartilage defect,Focal cartilage abnormality,1,149,316,86,52,0.775,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0070,images/knee/omni_knee_0070.png,X-ray,knee,Right,Cartilage,Meniscal tear,Suspected meniscal tear,1,252,274,111,147,0.773,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0071,images/knee/omni_knee_0071.png,Ultrasound,knee,Left,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0072,images/knee/omni_knee_0072.png,MRI,knee,Right,LCL,Joint effusion,Increased joint fluid,1,412,115,50,47,0.975,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0073,images/knee/omni_knee_0073.png,MRI,knee,Left,LCL,Osteoarthritis,Degenerative joint changes,1,144,322,69,95,0.835,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0074,images/knee/omni_knee_0074.png,CT,knee,Left,Joint Space,Meniscal tear,Suspected meniscal tear,1,390,138,81,119,0.731,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0075,images/knee/omni_knee_0075.png,CT,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0076,images/knee/omni_knee_0076.png,X-ray,knee,Left,Joint Space,ACL injury,Abnormal ACL appearance,1,401,204,66,117,0.947,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0077,images/knee/omni_knee_0077.png,MRI,knee,Left,Cartilage,Cartilage defect,Focal cartilage abnormality,1,352,299,134,57,0.847,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0078,images/knee/omni_knee_0078.png,MRI,knee,Right,Femur,Meniscal tear,Suspected meniscal tear,1,134,301,132,157,0.905,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0079,images/knee/omni_knee_0079.png,X-ray,knee,Right,Joint Space,ACL injury,Abnormal ACL appearance,1,355,327,159,151,0.939,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0080,images/knee/omni_knee_0080.png,CT,knee,Right,LCL,Cartilage defect,Focal cartilage abnormality,1,124,222,155,102,0.918,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0081,images/knee/omni_knee_0081.png,Ultrasound,knee,Right,ACL,Cartilage defect,Focal cartilage abnormality,1,333,246,86,164,0.762,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0082,images/knee/omni_knee_0082.png,CT,knee,Right,Meniscus,Bone marrow edema,Marrow signal abnormality,1,385,221,42,172,0.975,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0083,images/knee/omni_knee_0083.png,X-ray,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0084,images/knee/omni_knee_0084.png,X-ray,knee,Right,Femur,ACL injury,Abnormal ACL appearance,1,309,88,63,115,0.764,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0085,images/knee/omni_knee_0085.png,X-ray,knee,Right,Joint Space,Joint effusion,Increased joint fluid,1,268,322,175,128,0.823,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0086,images/knee/omni_knee_0086.png,CT,knee,Right,Femur,Joint effusion,Increased joint fluid,1,218,236,104,99,0.735,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0087,images/knee/omni_knee_0087.png,CT,knee,Left,Tibia,Osteoarthritis,Degenerative joint changes,1,174,178,95,163,0.78,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0088,images/knee/omni_knee_0088.png,CT,knee,Left,LCL,Cartilage defect,Focal cartilage abnormality,1,231,196,132,85,0.788,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0089,images/knee/omni_knee_0089.png,X-ray,knee,Right,ACL,Joint effusion,Increased joint fluid,1,107,363,114,72,0.885,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0090,images/knee/omni_knee_0090.png,Ultrasound,knee,Left,ACL,Bone marrow edema,Marrow signal abnormality,1,373,225,160,162,0.828,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0091,images/knee/omni_knee_0091.png,MRI,knee,Right,Femur,Osteoarthritis,Degenerative joint changes,1,138,113,142,165,0.721,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0092,images/knee/omni_knee_0092.png,MRI,knee,Left,MCL,Joint effusion,Increased joint fluid,1,368,235,61,103,0.734,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0093,images/knee/omni_knee_0093.png,Ultrasound,knee,Left,Tibia,Bone marrow edema,Marrow signal abnormality,1,274,310,153,116,0.949,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0094,images/knee/omni_knee_0094.png,CT,knee,Left,Joint Space,ACL injury,Abnormal ACL appearance,1,130,186,94,107,0.892,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0095,images/knee/omni_knee_0095.png,X-ray,knee,Left,Tibia,Osteoarthritis,Degenerative joint changes,1,118,160,40,144,0.831,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0096,images/knee/omni_knee_0096.png,Ultrasound,knee,Right,ACL,Cartilage defect,Focal cartilage abnormality,1,198,227,112,156,0.721,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0097,images/knee/omni_knee_0097.png,CT,knee,Left,Patella,Osteoarthritis,Degenerative joint changes,1,138,358,97,78,0.963,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0098,images/knee/omni_knee_0098.png,X-ray,knee,Left,ACL,Bone marrow edema,Marrow signal abnormality,1,164,237,113,152,0.736,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0099,images/knee/omni_knee_0099.png,CT,knee,Right,Meniscus,Joint effusion,Increased joint fluid,1,336,356,166,152,0.723,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
+omni_knee_0100,images/knee/omni_knee_0100.png,Ultrasound,knee,Right,None,Normal,No abnormality detected,0,,,,,,SYNTHETIC_POC,NOT_FOR_DIAGNOSIS
