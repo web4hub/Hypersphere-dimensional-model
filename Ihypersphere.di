@@ -1,4 +1,4 @@
-# Hypersphere.dm 
+# Hypersphere.dm
 # Dimension Language — v0.1
 
 model Hypersphere {
