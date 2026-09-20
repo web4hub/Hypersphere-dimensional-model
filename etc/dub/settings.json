@@ -1,0 +1,17 @@
+name "hdm"
+description "A minimal D application."
+authors "seriki walter yakub"
+copyright "Copyright © 2026, My Name"
+license "Boost"
+
+dependency "libasync" version="~>0.9.5"
+
+configuration "library" {
+    targetPath "target/lib"
+}
+
+configuration "unittest" {
+    dependency "tested" version="~>0.9.5"
+    dependency "dshould" version="~>1.7.1"
+    targetPath "target/test"
+}
