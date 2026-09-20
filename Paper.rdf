@@ -1053,3 +1053,492 @@ with a common structure:
 That would make .dm an actual dimensional modeling language, rather than merely a file extension.
 
 The next logical step is to define the .dm grammar/specification—types, syntax, operators, coordinate systems, transformations, slicing, projections, topology, fields, and how LMLM parses and executes a .dm file.
+Perfect. Let’s formalize Dimension Language (.dm) v0.1 as an actual language specification rather than just a file format.
+
+.dm — Dimension Modeling Language
+
+Purpose
+
+.dm describes objects, spaces, dimensions, geometry, fields, transformations, observations, and projections in arbitrary-dimensional spaces.
+
+The fundamental pipeline is:
+
+\boxed{
+\text{Define}
+\rightarrow
+\text{Model}
+\rightarrow
+\text{Transform}
+\rightarrow
+\text{Observe}
+\rightarrow
+\text{Project}
+\rightarrow
+\text{Render}
+}
+
+⸻
+
+1. Minimal .dm file
+
+dm 0.1
+model Hypersphere {
+    dimension 4
+    axes [x, y, z, w]
+    geometry {
+        equation: x² + y² + z² + w² <= R²
+        radius: R
+    }
+    observe {
+        dimension: 3
+        method: slice
+        axis: w
+    }
+}
+
+This is the smallest useful representation of our 4D hypersphere.
+
+⸻
+
+2. Dimensions
+
+A dimension has a name, type, domain, and optionally a metric.
+
+dimension 4 {
+    axis x {
+        type: spatial
+        domain: real
+    }
+    axis y {
+        type: spatial
+        domain: real
+    }
+    axis z {
+        type: spatial
+        domain: real
+    }
+    axis w {
+        type: spatial
+        domain: real
+    }
+}
+
+Supported dimension types could include:
+
+spatial
+temporal
+compact
+configuration
+semantic
+latent
+relational
+abstract
+
+This is important because .dm shouldn’t automatically equate mathematical dimension with physical dimension.
+
+⸻
+
+3. Coordinates
+
+Coordinates can be declared explicitly:
+
+coordinates {
+    x: real
+    y: real
+    z: real
+    w: real
+}
+
+Or vector notation:
+
+X=(x,y,z,w)
+
+In .dm:
+
+vector X = [x, y, z, w]
+
+⸻
+
+4. Geometry
+
+Geometry defines the mathematical object.
+
+Our hypersphere:
+
+geometry {
+    equation:
+        x² + y² + z² + w² <= R²
+    center:
+        [0, 0, 0, 0]
+    radius:
+        R
+}
+
+We could also define parametric geometry:
+
+geometry parametric {
+    x = R sin(a) sin(b) cos(c)
+    y = R sin(a) sin(b) sin(c)
+    z = R sin(a) cos(b)
+    w = R cos(a)
+}
+
+⸻
+
+5. Topology
+
+Geometry and topology should be separate.
+
+topology {
+    manifold: S3
+    boundary: none
+    connected: true
+}
+
+This allows .dm to represent objects whose important properties aren’t purely geometric.
+
+⸻
+
+6. Fields
+
+A field assigns information to every point.
+
+For example:
+
+field density {
+    type: scalar
+    equation:
+        density(x,y,z,w) =
+            if x²+y²+z²+w² <= R²
+            then 1
+            else 0
+}
+
+Vector fields:
+
+field velocity {
+    type: vector
+    components:
+        [vx, vy, vz, vw]
+}
+
+Tensor fields:
+
+field metric {
+    type: tensor
+    rank: 2
+    components: g[μ,ν]
+}
+
+This gives .dm the ability to represent physics rather than merely shapes.
+
+⸻
+
+7. Transformations
+
+A transformation changes the representation.
+
+Translation:
+
+transform move {
+    vector: [a,b,c,d]
+}
+
+Rotation in the x-w plane:
+
+\begin{aligned}
+x' &= x\cos\theta-w\sin\theta\\
+w' &= x\sin\theta+w\cos\theta
+\end{aligned}
+
+.dm:
+
+transform rotate {
+    plane: [x,w]
+    angle: θ
+}
+
+This is particularly useful because a 4D object can be rotated in planes that don’t exist in ordinary 3D visualization.
+
+⸻
+
+8. Observation
+
+This is one of the most important parts.
+
+The object may exist in N dimensions, but the observer has access to only M.
+
+observe {
+    source: 4D
+    target: 3D
+    method: slice
+    axis: w
+    value: 0
+}
+
+Mathematically:
+
+P_w(X)=
+(x,y,z)
+
+at:
+
+w=w_0
+
+⸻
+
+9. Projection
+
+A projection doesn’t necessarily remove a dimension—it can map it into another representation.
+
+For example:
+
+projection perspective4D {
+    source: [x,y,z,w]
+    target: [X,Y,Z]
+    distance: d
+}
+
+One possible mathematical projection is:
+
+X=\frac{dx}{d-w}
+
+Y=\frac{dy}{d-w}
+
+Z=\frac{dz}{d-w}
+
+Now w influences apparent scale and position.
+
+That could produce a much more intuitive visualization of 4D geometry.
+
+⸻
+
+10. Time
+
+A .dm model can evolve:
+
+time {
+    variable: t
+    start: 0
+    end: 10
+    step: 0.01
+}
+
+Then geometry can depend on time:
+
+radius:
+    R(t) = R0 + v*t
+
+So the object becomes:
+
+\mathcal O(x,y,z,w,t)
+
+⸻
+
+11. Compactification
+
+Now we can directly represent the physics we’ve been discussing.
+
+compactification {
+    axis: w
+    topology: S1
+    radius: R
+    identification:
+        w ~ w + 2πR
+}
+
+Mathematically:
+
+w\sim w+2\pi R
+
+The .dm engine now knows that w is periodic.
+
+⸻
+
+12. Quantum modes
+
+We could even describe Kaluza–Klein modes:
+
+modes {
+    axis: w
+    momentum:
+        p[n] = nħ/R
+    mass:
+        m[n]² = m0² + n²ħ²/(R²c²)
+}
+
+So the same .dm model can describe both:
+
+geometry
+
+and
+
+physical consequences of that geometry.
+
+⸻
+
+13. Relational dimensions
+
+Here’s where .dm goes beyond traditional geometry.
+
+relation network {
+    node A
+    node B
+    node C
+    edge A -> B
+    edge B -> C
+    edge C -> A
+}
+
+There is no requirement that A, B and C have physical coordinates.
+
+The structure itself is the object.
+
+⸻
+
+14. Semantic dimensions
+
+We can represent abstract dimensions too:
+
+dimension confidence {
+    type: semantic
+    domain: [0,1]
+}
+
+An object might therefore have:
+
+dimensions {
+    spatial: [x,y,z]
+    temporal: [t]
+    semantic: [confidence, relevance]
+    latent: [l1,l2,...,l1024]
+}
+
+That becomes extremely useful for AI.
+
+⸻
+
+15. LMLM integration
+
+I’d make LMLM the intelligence layer, while .dm becomes the world/model layer.
+
+             LMLM
+              │
+       understanding/reasoning
+              │
+              ▼
+           .dm MODEL
+              │
+     ┌────────┼────────┐
+     ▼        ▼        ▼
+  Geometry  Physics  Semantics
+     │        │        │
+     └────────┼────────┘
+              ▼
+         N-D ENGINE
+              │
+       ┌──────┼──────┐
+       ▼      ▼      ▼
+      3D     2D     VR
+
+LMLM could ask:
+
+load Hypersphere.dm
+observe axis=w value=0
+rotate plane=[x,w] angle=45°
+project target=3D
+render
+
+And the engine produces the corresponding visualization.
+
+⸻
+
+16. .dm execution model
+
+The interpreter could use:
+
+\boxed{
+Parser
+\rightarrow
+AST
+\rightarrow
+Dimension Graph
+\rightarrow
+Geometry Engine
+\rightarrow
+Projection Engine
+\rightarrow
+Renderer
+}
+
+The AST might look conceptually like:
+
+Model
+├── Dimensions
+│   ├── x
+│   ├── y
+│   ├── z
+│   └── w
+├── Geometry
+│   └── Hypersphere
+├── Fields
+├── Transformations
+├── Observation
+├── Projection
+└── Rendering
+
+⸻
+
+17. The .dm ecosystem
+
+I’d define these initial file types:
+
+.dm       Dimension Model
+.dmx      Dimension Module
+.dms      Dimension Scene
+.dmf      Dimension Field
+.dmp      Dimension Projection
+.dmt      Dimension Transform
+
+But .dm should remain the primary format. The others can come later if there’s a real need.
+
+⸻
+
+18. The first real test
+
+Our first canonical test file should be:
+
+dm 0.1
+model Hypersphere {
+    dimension 4
+    axes [x,y,z,w]
+    geometry {
+        equation:
+            x² + y² + z² + w² <= R²
+    }
+    topology {
+        manifold: S3
+        boundary: none
+    }
+    observation {
+        target: 3D
+        method: slice
+        axis: w
+        range: [-R,R]
+    }
+    projection {
+        method: perspective
+    }
+    animation {
+        parameter: w
+        steps: 120
+    }
+    render {
+        mode: volume
+        interactive: true
+    }
+}
+
+That gives us a formal starting point for Dimension Language, while keeping the science honest: .dm can model hypothetical extra dimensions without asserting that those dimensions physically exist.
+
+The next useful move is to turn this specification into an actual parser + renderer prototype, so Hypersphere.dm isn’t just a specification—it becomes an executable model.
